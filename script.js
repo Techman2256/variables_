@@ -2,47 +2,73 @@
 
 // Age Calculator:
 //  * Store your birth year in a constant variable.
+var mybrithyear = 1989;
 //  * Store a future year in a variable.
+var futureYear = 2023;
 //  * Calculate your 2 possible ages for that year based on the stored values.
+var age = futureYear - mybrithyear;
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+console.log('I will be either ' + age + ' or ' + (age - 1));
 
 // ## Problem Two
 
 // Snack Supply Calculator:
 //  * Store your current age in a variable.
+var age = 34;
 //  * Store a maximum age in a constant variable.
+var maxage = 100;
 //  * Store an estimated snack amount per day (as a number).
+var numPerDay = 2;
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
+var totalNeeded = (numPerDay * 365) * (maxage - age);
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
 //  * Store a radius into a variable.
+var radius = 3;
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
+var circumferenceResult = Math.PI * radius;
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
+var areaOfCircle = Math.PI * radius*radius;
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
 
 // ## Problem Four
 
 // Temperature Converter:
 //  * Store a celsius temperature into a variable.
+var celsius = 30;
 //  * Convert it to fahrenheit and output "`tempInCelsius`°C is `tempInFahrenheit`°F".
+var celsiusInF = (celsius*9)/5 + 32;
 //  * Now store a fahrenheit temperature into a variable.
+var fahrenheit = 20;
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
+var fahrenheitInC = ((fahrenheit - 32)*5)/9;
 
 
 // ## Problem Five
 
 // Grades Calculator:
 //  * Store Alices's grade on a test to a variable
+let AliceGrade = 80;
 //  * Store Bob's grade on a test to a variable
+let BobsGrade = 90;
 //  * Store Cam's grade on a test to a variable
+let CamsGrade = 85;
 //  * Find the average grade of all students
+let averageGrade = (AliceGrade + BobGrade + CamGrade) / 3;
 //  * Store Dee's grade on a test to a variable
+let DeesGrade = 75;
 //  * Find the average grade of all students
+averageGrade = (AliceGrade + BobGrade + CamGrade + DeeGrade) / 4;
 //  * Print out if Dee's grade is higher than the class average
+if (DeeGrade > averageGrade) {
+    console.log("Dee's grade is higher than the class average.");
+  } else {
+    console.log("Dee's grade is not higher than the class average.");
+  }
 
 // ## Problem Six
 
